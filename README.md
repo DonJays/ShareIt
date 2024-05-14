@@ -18,3 +18,12 @@ Here are some ideas to get you started:
 This website contains my learnings, coaching, mentoring, improvements,automation, scripting etc.,.
 
 This website is always a work-in-progress. Expect things to unexpectedly break from time to time.
+
+
+## TOPICS
+
+[UNIX] ()
+[JAVA Production Support] ()
+[SQL] ()
+[Mongo DB] ()
+[Splunk] ()
