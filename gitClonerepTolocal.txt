@@ -9,5 +9,53 @@ In this txt file we will learn
 
 download "Git bash into your system" ==> Search "Downlaod git bash in windows" - git-scm.com
 now do the setup in local, next next is done, no additional steps is followed
-now copy the rep path from your main and form a commad as below
-git clone 
+now copy the rep path from your main and form a commad as below. for path of your rep it will be in main brach under share.
+$git clone https://github.com/DonJays/ShareIt.git
+
+change dr to where you need to create a file.
+$cd sahreIt
+
+now run below command
+$git add file.txt
+
+Now create a folder in your local and right click in your folder. You see an option "git bash"
+click and open git bash and enter the above clone command
+
+2) How to create a local txt file in you local rep which you have cloned from internet.
+
+you need to type below command to create a new txt file from bash
+$touch file.txt
+
+I created this txt file which you are reading now in my loacl and copied into main rep.
+
+3) How to commit changes and push to main git
+
+Now you have sucessfully created a txt file in your local. we need to commit into your local git rep first and then we will push into main git.
+
+before this step we need to tell the bash who you are. define username, name and password
+$git config --global user.email "mahesh08041998@gmail.com"
+$git config --global user.name "Mahesh N"
+$git config --global user.password "password"
+
+now you have defined who you are, now we need to commit changes into your local rep.
+$git commit -m "added a file file.txt"
+
+Now you have commited into your local rep.
+
+Time to push this changes into you main git.
+$git push origin main
+
+it will be redirecetd to browser git login page. provide your credentials and enter.
+Now you will see your local txt file from your local rep is cloned into main git branch
+
+For any doubts try to tribleshoot on your own, you are learning.
+
+P.S - some usefull commands.
+$git status
+$git branch
+$git config --all
+$git config --global --list
+
+Thanks, hope this page is easy and simple to understand
+
+
