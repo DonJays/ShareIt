@@ -1,0 +1,12 @@
+Hi all,
+
+In this txt file we will learn 
+1) how to download rep to local
+2) how to create a local txt file 
+3) how to commit changes and push to main git
+
+1) How to downlaod main git into local
+
+download "Git bash into your system" ==> Search "Downlaod git bash in windows" - git-scm.com
+now do the setup in local, next next is done, no additional steps is followed
+now copy the rep path from your main. 
