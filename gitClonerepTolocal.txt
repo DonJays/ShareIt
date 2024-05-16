@@ -9,4 +9,5 @@ In this txt file we will learn
 
 download "Git bash into your system" ==> Search "Downlaod git bash in windows" - git-scm.com
 now do the setup in local, next next is done, no additional steps is followed
-now copy the rep path from your main. 
+now copy the rep path from your main and form a commad as below
+git clone 
