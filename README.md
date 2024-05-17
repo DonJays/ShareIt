@@ -7,11 +7,12 @@ In this txt file we will learn
 2) how to create a local txt file 
 3) how to commit changes and push to main git
 
-1) How to downlaod main git into local
+==> How to downlaod main git into local
 
 download "Git bash into your system" ==> Search "Downlaod git bash in windows" - git-scm.com
 now do the setup in local, next next is done, no additional steps is followed
 now copy the rep path from your main and form a commad as below. for path of your rep it will be in main brach under share.
+
 $git clone https://github.com/DonJays/ShareIt.git
 
 change dr to where you need to create a file.
@@ -23,14 +24,14 @@ $git add file.txt
 Now create a folder in your local and right click in your folder. You see an option "git bash"
 click and open git bash and enter the above clone command
 
-2) How to create a local txt file in you local rep which you have cloned from internet.
+==> How to create a local txt file in you local rep which you have cloned from internet.
 
 you need to type below command to create a new txt file from bash
 $touch file.txt
 
 I created this txt file which you are reading now in my loacl and copied into main rep.
 
-3) How to commit changes and push to main git
+==> How to commit changes and push to main git
 
 Now you have sucessfully created a txt file in your local. we need to commit into your local git rep first and then we will push into main git.
 
