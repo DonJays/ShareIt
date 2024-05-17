@@ -1,5 +1,300 @@
 # ShareIt
 Share the knowledge 
+Hi all,
+
+In this txt file we will learn 
+1) how to download rep to local
+2) how to create a local txt file 
+3) how to commit changes and push to main git
+
+1) How to downlaod main git into local
+
+download "Git bash into your system" ==> Search "Downlaod git bash in windows" - git-scm.com
+now do the setup in local, next next is done, no additional steps is followed
+now copy the rep path from your main and form a commad as below. for path of your rep it will be in main brach under share.
+$git clone https://github.com/DonJays/ShareIt.git
+
+change dr to where you need to create a file.
+$cd sahreIt
+
+now run below command
+$git add file.txt
+
+Now create a folder in your local and right click in your folder. You see an option "git bash"
+click and open git bash and enter the above clone command
+
+2) How to create a local txt file in you local rep which you have cloned from internet.
+
+you need to type below command to create a new txt file from bash
+$touch file.txt
+
+I created this txt file which you are reading now in my loacl and copied into main rep.
+
+3) How to commit changes and push to main git
+
+Now you have sucessfully created a txt file in your local. we need to commit into your local git rep first and then we will push into main git.
+
+before this step we need to tell the bash who you are. define username, name and password
+$git config --global user.email "mahesh08041998@gmail.com"
+$git config --global user.name "Mahesh N"
+$git config --global user.password "password"
+
+now you have defined who you are, now we need to commit changes into your local rep.
+$git commit -m "added a file file.txt"
+
+Now you have commited into your local rep.
+
+Time to push this changes into you main git.
+$git push origin main
+
+it will be redirecetd to browser git login page. provide your credentials and enter.
+Now you will see your local txt file from your local rep is cloned into main git branch
+
+For any doubts try to tribleshoot on your own, you are learning.
+
+P.S - some usefull commands.
+$git status
+$git branch
+$git config --all
+$git config --global --list
+
+Thanks, hope this page is easy and simple to understand
+
+this is copy of my command
 
 
-@sadham
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge
+$
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge
+$ git clone https://github.com/DonJays/ShareIt.git
+Cloning into 'ShareIt'...
+remote: Enumerating objects: 44, done.
+remote: Counting objects: 100% (44/44), done.
+remote: Compressing objects: 100% (35/35), done.
+remote: Total 44 (delta 13), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (44/44), 14.50 KiB | 412.00 KiB/s, done.
+Resolving deltas: 100% (13/13), done.
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge
+$ ls
+'Screenshot 2024-05-16 180639.png'   ShareIt/
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge
+$ cd ShareIt/
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ ls
+README.md
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ touch gitClonerepTolocal.txt
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git config --global --list
+fatal: unable to read config file 'C:/Users/mahes/.gitconfig': No such file or directory
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ ls
+README.md  gitClonerepTolocal.txt
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git branch
+* main
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitClonerepTolocal.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git add gitClonerepTolocal.txt
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   gitClonerepTolocal.txt
+
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git commit -m "added a file gitClonerepTolocal.txt
+> git config --global user.email "mahesh08041998@gmail.com"
+> git config --global user.name "Mahesh"
+> ^C
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git config --global user.email "mahesh08041998@gmail.com"
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git config --global user.password "*******"
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git commit -m "added a file gitClonerepTolocal.txt"
+[main 28666fe] added a file gitClonerepTolocal.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 gitClonerepTolocal.txt
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git config --all
+error: unknown option `all'
+usage: git config [<options>]
+
+Config file location
+    --[no-]global         use global config file
+    --[no-]system         use system config file
+    --[no-]local          use repository config file
+    --[no-]worktree       use per-worktree config file
+    -f, --[no-]file <file>
+                          use given config file
+    --[no-]blob <blob-id> read config from given blob object
+
+Action
+    --[no-]get            get value: name [value-pattern]
+    --[no-]get-all        get all values: key [value-pattern]
+    --[no-]get-regexp     get values for regexp: name-regex [value-pattern]
+    --[no-]get-urlmatch   get value specific for the URL: section[.var] URL
+    --[no-]replace-all    replace all matching variables: name value [value-pattern]
+    --[no-]add            add a new variable: name value
+    --[no-]unset          remove a variable: name [value-pattern]
+    --[no-]unset-all      remove all matches: name [value-pattern]
+    --[no-]rename-section rename section: old-name new-name
+    --[no-]remove-section remove a section: name
+    -l, --[no-]list       list all
+    --[no-]fixed-value    use string equality when comparing values to 'value-pattern'
+    -e, --[no-]edit       open an editor
+    --[no-]get-color      find the color configured: slot [default]
+    --[no-]get-colorbool  find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --[no-]type <type>
+                          value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --[no-]null       terminate values with NUL byte
+    --[no-]name-only      show variable names only
+    --[no-]includes       respect include directives on lookup
+    --[no-]show-origin    show origin of config (file, standard input, blob, command line)
+    --[no-]show-scope     show scope of config (worktree, local, global, system, command)
+    --[no-]default <value>
+                          with --get, use default value when missing entry
+    --[no-]comment <value>
+                          human-readable comment string (# will be prepended as needed)
+
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git congif --global user.name "Mahesh N"
+git: 'congif' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git config --global user.name "Mahesh N"
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git config --all
+error: unknown option `all'
+usage: git config [<options>]
+
+Config file location
+    --[no-]global         use global config file
+    --[no-]system         use system config file
+    --[no-]local          use repository config file
+    --[no-]worktree       use per-worktree config file
+    -f, --[no-]file <file>
+                          use given config file
+    --[no-]blob <blob-id> read config from given blob object
+
+Action
+    --[no-]get            get value: name [value-pattern]
+    --[no-]get-all        get all values: key [value-pattern]
+    --[no-]get-regexp     get values for regexp: name-regex [value-pattern]
+    --[no-]get-urlmatch   get value specific for the URL: section[.var] URL
+    --[no-]replace-all    replace all matching variables: name value [value-pattern]
+    --[no-]add            add a new variable: name value
+    --[no-]unset          remove a variable: name [value-pattern]
+    --[no-]unset-all      remove all matches: name [value-pattern]
+    --[no-]rename-section rename section: old-name new-name
+    --[no-]remove-section remove a section: name
+    -l, --[no-]list       list all
+    --[no-]fixed-value    use string equality when comparing values to 'value-pattern'
+    -e, --[no-]edit       open an editor
+    --[no-]get-color      find the color configured: slot [default]
+    --[no-]get-colorbool  find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --[no-]type <type>
+                          value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --[no-]null       terminate values with NUL byte
+    --[no-]name-only      show variable names only
+    --[no-]includes       respect include directives on lookup
+    --[no-]show-origin    show origin of config (file, standard input, blob, command line)
+    --[no-]show-scope     show scope of config (worktree, local, global, system, command)
+    --[no-]default <value>
+                          with --get, use default value when missing entry
+    --[no-]comment <value>
+                          human-readable comment string (# will be prepended as needed)
+
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git config --global --list
+user.email=mahesh08041998@gmail.com
+user.password=********
+user.name=Mahesh N
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ ls
+README.md  gitClonerepTolocal.txt
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DonJays/ShareIt.git
+   3c0c326..28666fe  main -> main
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ ^C
+
+mahes@Nagaraja_A MINGW64 ~/Desktop/Git-knowledge/ShareIt (main)
+$ git commit -m "added a file gitClonerepTolocal.txt
+git config --global user.email "mahesh08041998@gmail.com"
+git config --global user.name "Mahesh"
+
+
